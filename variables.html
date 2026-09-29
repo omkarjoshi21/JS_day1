@@ -1,0 +1,16 @@
+<button onclick="
+    document.getElementById('paragraph').innerHTML =
+    'These are your cart Items = ' + cartquantity;">
+    show
+</button>
+
+<button onclick="cartquantity = cartquantity + 1">Add to Cart</button>
+<button onclick="cartquantity = cartquantity + 2">+2</button>
+<button onclick="cartquantity = cartquantity + 3">+3</button>
+<button onclick="cartquantity = 0">Clear Cart</button>
+
+<p id="paragraph">Your cart Items are =</p>
+
+<script>
+    window.cartquantity = 0;
+</script>
